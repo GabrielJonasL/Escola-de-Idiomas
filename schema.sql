@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS escola_idiomas;
+USE escola_idiomas;
+
+CREATE TABLE IF NOT EXISTS estudante (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idioma VARCHAR(50) NOT NULL,
+    nivel VARCHAR(30) NOT NULL
+);

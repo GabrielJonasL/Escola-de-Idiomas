@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "427b202d-b5e3-4939-97ce-edc210672b03",
+		"name": "Escola de Idiomas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "59029816",
+		"_collection_link": "https://gabrieljonasl-1399971.postman.co/workspace/Gabriel-Lucio's-Workspace~e90e1352-f562-4bf9-8c27-691a0dd028c1/collection/59029816-427b202d-b5e3-4939-97ce-edc210672b03?action=share&source=collection_link&creator=59029816"
+	},
+	"item": [
+		{
+			"name": "estudante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Ana Silva\",\n  \"idioma\": \"Inglês\",\n  \"nivel\": \"Intermediário\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estudante",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estudante/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/estudante/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudante",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estudante/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"nome\": \"Armando Souza\",\n  \"idioma\": \"Espanhol\",\n  \"nivel\": \"Avançado\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/estudante/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudante",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "estudante/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/estudante/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"estudante",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
